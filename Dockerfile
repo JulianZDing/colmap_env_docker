@@ -3,7 +3,7 @@ FROM centos:latest
 RUN yum update -y
 RUN yum install -y \
     git \
-    cmake \
+    cmake3 \
     gcc gcc-c++ make \
     boost-devel \
     eigen3-devel \
