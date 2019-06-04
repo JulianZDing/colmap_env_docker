@@ -1,6 +1,7 @@
 FROM ubuntu:18.04
 # Based on installation instructions located at https://colmap.github.io/install.html
 RUN apt-get install \
+    update \
     git \
     cmake \
     build-essential \
