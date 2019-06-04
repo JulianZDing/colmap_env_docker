@@ -1,7 +1,7 @@
 FROM centos:latest
 # Based on installation instructions located at https://colmap.github.io/install.html
 RUN yum update -y
-RUN yum install cmake && yum remove cmake -y \
+RUN yum install cmake -y && yum remove cmake -y \
     && yum install -y wget && wget https://cmake.org/files/v3.6/cmake-3.6.2.tar.gz && tar xzf cmake-3.6.2.tar.gz && cd cmake-3.6.2 && ./configure && make && make install \
     && yum install -y \
     git \
