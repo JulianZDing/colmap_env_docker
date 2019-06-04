@@ -1,5 +1,5 @@
+FROM scratch
 # Based on installation instructions located at https://colmap.github.io/install.html
-
 RUN apt-get install \
     git \
     cmake \
