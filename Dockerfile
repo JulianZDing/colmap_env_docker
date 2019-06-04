@@ -1,6 +1,5 @@
 FROM centos:latest
 # Based on installation instructions located at https://colmap.github.io/install.html
-RUN yum check-update
 RUN yum -y update
 RUN yum -y install \
     git \
