@@ -24,6 +24,8 @@ RUN apt-get install \
     libatlas-base-dev \
     libsuitesparse-dev
 
+CMD ["Y"]
+
 RUN git clone https://ceres-solver.googlesource.com/ceres-solver \
     && cd ceres-solver && git checkout $(git describe --tags) \
     && mkdir build && cd build \
