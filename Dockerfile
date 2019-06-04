@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 # Based on installation instructions located at https://colmap.github.io/install.html
-RUN apt-get update
-RUN apt-get install \
+RUN apt-get -y update
+RUN apt-get -y install \
     git \
     cmake \
     build-essential \
@@ -23,8 +23,6 @@ RUN apt-get install \
     libcgal-qt5-dev \
     libatlas-base-dev \
     libsuitesparse-dev
-
-CMD ["Y"]
 
 RUN git clone https://ceres-solver.googlesource.com/ceres-solver \
     && cd ceres-solver && git checkout $(git describe --tags) \
