@@ -1,5 +1,4 @@
-FROM scratch
-CMD ["/bin/bash"]
+FROM centos7.6.1810
 # Based on installation instructions located at https://colmap.github.io/install.html
 RUN apt-get install \
     git \
