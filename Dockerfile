@@ -1,7 +1,8 @@
 FROM centos:latest
 # Based on installation instructions located at https://colmap.github.io/install.html
-RUN apt-get -y update
-RUN apt-get -y install \
+RUN yum check-update
+RUN yum -y update
+RUN yum -y install \
     git \
     cmake \
     build-essential \
