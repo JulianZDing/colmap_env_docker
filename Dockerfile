@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM nvidia/cuda:latest
 # Installing Colmap: Based on installation instructions located at https://colmap.github.io/install.html
 RUN apt-get -y update
 RUN apt-get -y install \
